@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link rel="icon"  href="images/logo-gamesfull.svg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <title>
+            GamesFull Clone
+        </title>
+    </head>
+    <body>
+        <header>
+            <div  id="logo">
+                <div id="logo1">
+                    <img src="images/logo-gamesfull.svg">
+                </div>
+                <div id="infologo">
+                    <p id="special">1113</p><p>GAMES AVAILABLE</p>
+                </div>
+            </div>
+            <div id="usersearcher">
+                <i onclick="thereact('rendersearch')" class="fa fa-search"></i>
+                <i class="fa fa-user"></i>
+            </div>
+        </header>
+        <div id="scrollbody">
+            <div id="sidebar">
+                <div class="innerside">
+                    <div class="hoverable">
+                        <div class="imagealign"><img src="images/home.svg"></div>
+                        <p>Home</p>
+                    </div>
+                    <div class="hoverable">
+                        <div class="imagealign"><img src="images/gamepad.svg"></div>
+                        <p>Jeudos</p>
+                    </div>
+                    <div class="hoverable">
+                        <div class="imagealign"><img src="images/collection.svg"></div>
+                        <p>Collections</p>
+                    </div>
+                    <div class="hoverable">
+                        <div class="imagealign"><img src="images/category.svg"></div>
+                        <p>Cartegories</p>
+                    </div>
+                    <div class="hoverable">
+                        <div class="imagealign"><img src="images/help.svg"></div>
+                        <p>Help</p>
+                    </div>
+                    <div class="hoverable">
+                        <div class="imagealign"><img src="images/reports.svg"></div>
+                        <p>Reports</p>
+                    </div>
+                    <div class="hoverable">
+                        <div class="imagealign"><img src="images/users.svg"></div>
+                        <p>Users</p>
+                    </div>
+                    <div class="hoverable">
+                        <div class="imagealign"><img src="images/record.svg"></div>
+                        <p>History</p>
+                    </div>
+                </div>
+            </div>
+            <div id="games">
+                <div class="adimage">
+                    <div class="thead">
+                        <img src="images/subd.jpeg">
+                    </div>
+                </div>
+                <div class="gamescrolling">
+                    <div class="cartegory">
+                        <p>Ultimate Publications</p>
+                    </div>
+                    <div class="actualscrolling" id="list1">
+                        <button class="leftbutton" onclick="scrollgameright('list1')"><i class="fa fa-angle-left"></i></button>
+                        <button class="rightbutton" onclick="scrollgameleft('list1')"><i class="fa fa-angle-right"></i></button>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/a-plague-tale-innocence-10783-poster-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    A Plague Tale
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :15.2GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Alan-Wake-Remastered-193x288 (1).jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Alan Wake
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :8.9GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Assassins-Creed-Valhalla-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    AC Valhalla
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :2.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Bendy-and-the-Dark-Revival-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Bendy and The Dark Revival
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :67.4GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/BIOMUTANT-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Biomutant
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :32.2GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/control-11377-poster-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Control
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :24,3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Crisis-Core-Final-Fantasy-VII-Reunion-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Final Fantasy VII
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :43.8GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/crysis-2-maximum-edition-2042-poster-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Crysis 2
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :22.1GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Cyberpunk-2077-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Cyberpunk 2077
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Days-Gone-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Days Gone
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :43.9GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/dead-space-2-2603-poster-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Dead Space 2
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :15.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Red-Dead-Redemption-2-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Red Dead Redemption 2
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :103GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Forza-Horizon-5-Premium-Edition-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Forza Horizon 5
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :80.4GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/ELDEN-RING-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Elden Ring
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :60.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Evil-West-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Evil West
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :32.5GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gamescrolling">
+                    <div class="cartegory">
+                        <p>Major Releases</p>
+                    </div>
+                    <div class="actualscrolling" id="list2">
+                        <button class="leftbutton" onclick="scrollgameright('list2')"><i class="fa fa-angle-left"></i></button>
+                        <button class="rightbutton" onclick="scrollgameleft('list2')"><i class="fa fa-angle-right"></i></button>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/crysis-collection-2034-poster-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Crysis Collection
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :15.2GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/dead-space-2613-poster-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Dead Space 2
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :8.9GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/God-of-War-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    God of War
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :2.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Gotham-Knights-Deluxe-Edition-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Gotham Knights
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :67.4GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Hard-West-2-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Hard West 2
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :32.2GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Mafia-Edicion-Definitiva-193x288 (1).jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Mafia Definitive Edition
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :24,3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Hello-Neighbor-2-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Hello Neighbour 2
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :43.8GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/marvels-avengers-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Marvel's Avengers
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :22.1GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Resident-Evil-Village-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Resident Evil Village
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Uncharted-4-Legacy-of-Thieves-Collection-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Uncharted Legacy of Thieves
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :43.9GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/the-evil-within-2-1838-poster-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    The Evil Within
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :15.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/red-faction-guerrilla-re-mars-tered-6091-poster-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Red Faction Geurilla
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :103GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/eFootball-PES-2021-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    E-Football
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :80.4GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Mortal-Kombat-11-Ultimate-Edition-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Mortal Kombat 11
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :60.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Marvels-SpiderMan-Miles-Morales-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Spiderman Miles Morales
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :32.5GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adimage">
+                    <div class="thead">
+                        <img src="images/netflix-2 (1).jpg">
+                    </div>
+                </div>
+                <div class="gamescrolling">
+                    <div class="cartegory">
+                        <p>Must Play</p>
+                    </div>
+                    <div class="actualscrolling" id="list3">
+                        <button class="leftbutton" onclick="scrollgameright('list3')"><i class="fa fa-angle-left"></i></button>
+                        <button class="rightbutton" onclick="scrollgameleft('list3')"><i class="fa fa-angle-right"></i></button>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/A-Plague-Tale-Requiem-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Plague Tale Requim
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :15.2GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/grand-theft-auto-v-1006-poster-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Grand Theft Auto V
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :8.9GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Hello-Neighbor-2-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Hello Neighbour 2
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :2.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/hitman-3-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Hitman 3
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :67.4GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Lost-Eidolons-Deluxe-Edition-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Lost Eildon
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :32.2GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Mount-and-Blade-II-Bannerlord-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Mount and Blade II
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :24,3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/The-Dark-Pictures-Anthology-The-Devil-in-Me-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    The Dark Pictures Anthology
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :43.8GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/DEATH-STRANDING-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Death Stranding
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :22.1GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/PAW-Patrol-Grand-Prix-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Paw Patrol Grand Prix
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Chernobylite-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Chernobylite
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :43.9GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Metro-Exodus-Enhanced-Edition-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Metro Exodus
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :15.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Grand-Theft-Auto-The-Trilogy-The-Definitive-Edition-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Grand Theft Auto The Trilogy
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :103GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/eFootball-PES-2021-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    E-Football
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :80.4GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Mortal-Kombat-11-Ultimate-Edition-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Mortal Kombat 11
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :60.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Marvels-SpiderMan-Miles-Morales-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Spiderman Miles Morales
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :32.5GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gamescrolling">
+                    <div class="cartegory">
+                        <p>Recommended</p>
+                    </div>
+                    <div class="actualscrolling" id="list4">
+                        <button class="leftbutton" onclick="scrollgameright('list4')"><i class="fa fa-angle-left"></i></button>
+                        <button class="rightbutton" onclick="scrollgameleft('list4')"><i class="fa fa-angle-right"></i></button>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Metro-Exodus-Enhanced-Edition-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Metro Exodus
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :15.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Grand-Theft-Auto-The-Trilogy-The-Definitive-Edition-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Grand Theft Auto The Trilogy
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :103GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/eFootball-PES-2021-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    E-Football
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :80.4GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Mortal-Kombat-11-Ultimate-Edition-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Mortal Kombat 11
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :60.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/a-plague-tale-innocence-10783-poster-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    A Plague Tale
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :15.2GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Alan-Wake-Remastered-193x288 (1).jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Alan Wake
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :8.9GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Assassins-Creed-Valhalla-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    AC Valhalla
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :2.3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Bendy-and-the-Dark-Revival-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Bendy and The Dark Revival
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :67.4GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/BIOMUTANT-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Biomutant
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :32.2GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Marvels-SpiderMan-Miles-Morales-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Spiderman Miles Morales
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :32.5GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/hitman-3-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Hitman 3
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :67.4GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Lost-Eidolons-Deluxe-Edition-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Lost Eildon
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :32.2GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/Mount-and-Blade-II-Bannerlord-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Mount and Blade II
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :24,3GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/The-Dark-Pictures-Anthology-The-Devil-in-Me-193x288.jpeg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    The Dark Pictures Anthology
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :43.8GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gamecontainer">
+                            <div class="gameimage">
+                                <img src="images/DEATH-STRANDING-193x288.jpg">
+                            </div>
+                            <div class="gameinfo">
+                                <div class="gamename">
+                                    Death Stranding
+                                </div>
+                                <div class="additionalinfo">
+                                    <div class="sizes">
+                                        <p>Size :22.1GB</p>
+                                        <p>Version:Elamigos</p>
+                                    </div>
+                                    <button><i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adimage">
+                    <div class="thead">
+                        <img src="images/netflix-2 (1).jpg">
+                    </div>
+                </div>
+                <footer>
+                    <div id="footerdetails">
+                        <div id="contacts">
+                            <p>Privacy Policy</p>
+                            <p>Terms and Conditions</p>
+                            <p>DMCA</p>    
+                            <p>Contacts</p>    
+                        </div>
+                        <div id="copyright">
+                            <p>Copyright&copy; 2021 GamesFull 3.0</p>
+                        </div>
+                    </div>
+                </footer>
+                <div id="chat">
+                    <div id="clickchat">
+                        <i class="fa fa-comments"></i> Chat <i class="fa fa-user"></i>
+                    </div>
+                </div>
+                <div id="rendersearch"></div>
+            </div>
+        </div>
+        <script type="text/babel"  src="js/brain.js"></script>
+    </body>
+</html>
