@@ -12,7 +12,7 @@
         font-family:Georgia, 'Times New Roman', Times, serif;
     }
     header{
-        height: 7vh;
+        height: 7%;
         margin-top: 1vh;
         font-size: 1rem;
         position: sticky;
@@ -656,7 +656,7 @@
         font-family:Georgia, 'Times New Roman', Times, serif;
     }
     header{
-        height: 7vh;
+        height: 7%;
         margin-top: 1vh;
         position: sticky;
         top: 0;
@@ -971,13 +971,8 @@ body{
     overflow: hidden;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-html{
-width: 100vw;
-height: 100vh;
-position:fixed;
-}
 header{
-    height: 7vh;
+    height: 7%;
     margin-top: 1vh;
     position: sticky;
     top: 0;
