@@ -971,6 +971,11 @@ body{
     overflow: hidden;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+html{
+width: 100vw;
+height: 100vh;
+position:fixed;
+}
 header{
     height: 7vh;
     margin-top: 1vh;
