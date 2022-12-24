@@ -17,6 +17,7 @@
         font-size: 1rem;
         position: sticky;
         top: 0;
+        z-index:5;
         color: white;
         display: flex;
         justify-content: space-between;
@@ -337,6 +338,7 @@
         position: sticky;
         top: 0;
         color: white;
+        z-index:5;
         display: flex;
         justify-content: space-between;
         max-width: 100%;
@@ -660,6 +662,7 @@
         top: 0;
         color: white;
         display: flex;
+        z-index:5;
         justify-content: space-between;
         max-width: 100%;
         background-image: url('../images/bb.JPG');
@@ -977,6 +980,7 @@ header{
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    z-index:5;
     background-image: url('../images/bb.JPG');
     background-size: cover;
 }
