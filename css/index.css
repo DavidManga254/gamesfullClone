@@ -981,7 +981,6 @@
 
 @media only screen and (min-width: 991px){
 body{
-    position:fixed;
     margin: 0;
     width: 100vw;
     height: 100vh;
