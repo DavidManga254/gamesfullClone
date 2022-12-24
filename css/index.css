@@ -788,10 +788,10 @@
         
     }
     .gamecontainer{
-        height:40vh;
+        height:fit-content;
         background-color: rgb(0, 0,0,.5);
         width: 40vw;
-        margin-right: 4vw;
+        margin-right: 10vw;
         border-radius: 5%;
     }
     .gamename:hover{
@@ -799,7 +799,7 @@
         cursor: pointer;
     }
     .gamecontainer img{
-        width: 15vw;
+        width: 24vw;
         height: 25vh;
         border-top-left-radius: 5%;
         border-top-right-radius: 5%;
@@ -811,7 +811,7 @@
     }
     .gamename{
         height:fit-content;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .additionalinfo{
         display: flex;
@@ -819,7 +819,7 @@
         color: rgb(163, 159, 159);
     }
     .sizes{
-        font-size: .65rem;
+        font-size: .9rem;
     }
     .additionalinfo button{
         background-color: transparent;
@@ -867,7 +867,7 @@
     }
     footer{
         margin-bottom: 13vh;
-        font-size: .8rem;
+        font-size: 1.2rem;
     }
     #chat{
         color: white;
@@ -956,7 +956,6 @@
         margin-top: 5vh;
     }
 }
-
 @media only screen and (min-width: 991px){
 body{
     margin: 0;
