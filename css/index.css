@@ -992,7 +992,7 @@ body{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 header{
-    height: 7%;
+    height: 15%;
     margin-top: 1vh;
     position: sticky;
     top: 0;
@@ -1000,6 +1000,7 @@ header{
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    z-index:2;
     background-image: url('../images/bb.JPG');
     background-size: cover;
 }
