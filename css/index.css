@@ -15,7 +15,7 @@
     header{
         height: 10%;
         margin-top: 1%;
-        font-size: 0.7em;
+        font-size: 2em;
         position: sticky;
         top: 0;
         color: white;
@@ -44,7 +44,7 @@
     
     }
     #infologo{
-        font-size: 1em;
+        font-size: 2em;
         margin-left: 1%;
         border-left: solid;
         border-color: white;
@@ -65,7 +65,7 @@
     #usersearcher i{
         margin-top: 2.5vh;
         margin-right: 2vw;
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
     #usersearcher i:hover{
         color: orange;
@@ -82,7 +82,7 @@
         justify-content: center;
         position:fixed;
         width: 100vw;
-        font-size: .5em;
+        font-size: 1.5em;
         bottom: 0;
         color: white;
         background-color: rgb(0,0,0,.9);
